@@ -41,6 +41,7 @@
 					// return the price as a decimal number with 2 decimal places
 					return Math.round(fBillTotal * 100.0) / 100.0;
 				};
+
 				// This function either turns on or off the row highlighting for vegetarian
 				// items (depending on the value of bShowVeg)
 				function highlightVegetarian(idTable, bShowVeg) {
@@ -62,6 +63,7 @@
 						};
 					};
 				};
+
 				// Utility function for getting the parent tag of a given tag
 				// but only of a certain type (i.e. a TR, a TABLE, etc.)
 				function getParentTag(oNode, sParentType) {
@@ -97,7 +99,98 @@
                <th>Price</th>
             </tr>
          </thead>
-         <tbody></tbody>
+         <tbody>
+            <tr>
+               <td colspan="3">Drinks</td>
+            </tr>
+            <tr vegetarian="false">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Coke</td>
+               <td align="right">2.50</td>
+            </tr>
+            <tr vegetarian="false">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Vodka</td>
+               <td align="right">15</td>
+            </tr>
+            <tr vegetarian="true">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Kombucha</td>
+               <td align="right">2.0</td>
+            </tr>
+            <tr>
+               <td colspan="3">Side Dishes</td>
+            </tr>
+            <tr vegetarian="false">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Potato Salad</td>
+               <td align="right">4.95</td>
+            </tr>
+            <tr vegetarian="false">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Chips</td>
+               <td align="right">4.50</td>
+            </tr>
+            <tr vegetarian="true">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Rice</td>
+               <td align="right">4.0</td>
+            </tr>
+            <tr>
+               <td colspan="3">Breakfast</td>
+            </tr>
+            <tr vegetarian="false">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Eggs Benedict</td>
+               <td align="right">12.99</td>
+            </tr>
+            <tr vegetarian="false">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Pouched Eggs</td>
+               <td align="right">8</td>
+            </tr>
+            <tr vegetarian="true">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>French Toast</td>
+               <td align="right">10</td>
+            </tr>
+            <tr>
+               <td colspan="3">Lunch</td>
+            </tr>
+            <tr vegetarian="false">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Grilled Chicken Sandwich</td>
+               <td align="right">7.50</td>
+            </tr>
+            <tr vegetarian="false">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Soup of the Day</td>
+               <td align="right">6</td>
+            </tr>
+            <tr vegetarian="true">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Falafel</td>
+               <td align="right">10</td>
+            </tr>
+            <tr>
+               <td colspan="3">Dinner</td>
+            </tr>
+            <tr vegetarian="false">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Ribeye Steak</td>
+               <td align="right">19.99</td>
+            </tr>
+            <tr vegetarian="false">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Sushi</td>
+               <td align="right">15</td>
+            </tr>
+            <tr vegetarian="true">
+               <td align="center"><input name="item0" type="checkbox"></td>
+               <td>Shakshuka</td>
+               <td align="right">15</td>
+            </tr>
+         </tbody>
       </table>
       <form class="indent">
          <p><input type="button" name="btnCalcBill" value="Calculate Bill" id="calcBill">
